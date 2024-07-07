@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [googlesuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testing on firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="hirerchyGoogle.TestCase2">
+        <methods>
+          <include name="Tc2"/>
+          <include name="Bf"/>
+        </methods>
+      </class> <!-- hirerchyGoogle.TestCase2 -->
+      <class name="hirerchyGoogle.Testcase3">
+        <methods>
+          <include name="Tc3"/>
+          <include name="Bf"/>
+        </methods>
+      </class> <!-- hirerchyGoogle.Testcase3 -->
+    </classes>
+  </test> <!-- Testing on firefox(failed) -->
+</suite> <!-- Failed suite [googlesuite] -->
